@@ -1,6 +1,6 @@
 {
   "ipcMode": null,
-  "executionRoleArn": "arn:aws:iam::747926693930:role/ecsTaskExecutionRole",
+  "executionRoleArn": null,
   "containerDefinitions": [
     {
       "dnsSearchDomains": null,
@@ -29,7 +29,7 @@
       "memoryReservation": null,
       "volumesFrom": [],
       "stopTimeout": null,
-      "image": "747926693930.dkr.ecr.us-east-1.amazonaws.com/nodejs-hello-world:754cdadefa120dba4651872174aa00ee4d393900",
+      "image": "747926693930.dkr.ecr.us-east-1.amazonaws.com/nodejs-hello-world:be607484947cced46da43f84690e33c321898894",
       "startTimeout": null,
       "firelensConfiguration": null,
       "dependsOn": null,
@@ -56,8 +56,8 @@
     "EXTERNAL",
     "EC2"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-1:747926693930:task-definition/nodejs-helloworld4:1",
-  "family": "nodejs-helloworld4",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-1:747926693930:task-definition/my-test-task:1",
+  "family": "my-test-task",
   "requiresAttributes": [
     {
       "targetId": null,
@@ -70,12 +70,6 @@
       "targetType": null,
       "value": null,
       "name": "com.amazonaws.ecs.capability.task-iam-role"
-    },
-    {
-      "targetId": null,
-      "targetType": null,
-      "value": null,
-      "name": "ecs.capability.execution-role-ecr-pull"
     }
   ],
   "pidMode": null,
