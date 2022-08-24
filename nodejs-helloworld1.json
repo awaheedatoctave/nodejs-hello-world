@@ -9,7 +9,7 @@
         "logDriver": "awslogs",
         "secretOptions": null,
         "options": {
-          "awslogs-group": "/ecs/nodejs-helloworld1",
+          "awslogs-group": "/ecs/nodejs-helloworld3",
           "awslogs-region": "us-east-1",
           "awslogs-stream-prefix": "ecs"
         }
@@ -34,14 +34,14 @@
       "secrets": null,
       "dockerSecurityOptions": null,
       "memory": null,
-      "memoryReservation": null,
+      "memoryReservation": 128,
       "volumesFrom": [],
       "stopTimeout": null,
-      "image": "747926693930.dkr.ecr.us-east-1.amazonaws.com/nodejs-hello-world:88bf4c9c6f33668b1ce33a415ec7da10ecfe4b89",
+      "image": "747926693930.dkr.ecr.us-east-1.amazonaws.com/nodejs-hello-world:754cdadefa120dba4651872174aa00ee4d393900",
       "startTimeout": null,
       "firelensConfiguration": null,
       "dependsOn": null,
-      "disableNetworking": null,
+      "disableNetworking": false,
       "interactive": null,
       "healthCheck": null,
       "essential": true,
@@ -64,8 +64,8 @@
     "EC2",
     "FARGATE"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-1:747926693930:task-definition/nodejs-helloworld1:1",
-  "family": "nodejs-helloworld1",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-1:747926693930:task-definition/nodejs-helloworld3:1",
+  "family": "nodejs-helloworld3",
   "requiresAttributes": [
     {
       "targetId": null,
@@ -90,6 +90,12 @@
       "targetType": null,
       "value": null,
       "name": "com.amazonaws.ecs.capability.docker-remote-api.1.19"
+    },
+    {
+      "targetId": null,
+      "targetType": null,
+      "value": null,
+      "name": "com.amazonaws.ecs.capability.docker-remote-api.1.21"
     },
     {
       "targetId": null,
